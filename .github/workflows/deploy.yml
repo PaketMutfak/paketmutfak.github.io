@@ -23,6 +23,10 @@ jobs:
         uses: actions/setup-node@v3
       - name: Install dependencies & build & deploy
         run: |
+
+          git config --global user.email "dev@paketmutfak.com.tr"
+          git config --global user.name "PaketMutfak"
+
           npm install
           npm run build
           npm run gh-pages
