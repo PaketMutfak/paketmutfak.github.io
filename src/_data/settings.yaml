@@ -1,0 +1,21 @@
+meta:
+  name: Paket Mutfak
+  url: "https://paketmutfak.com.tr"
+  description: The future of on-demand food
+  icon: /favicon.ico
+  footerInfo: The future of on-demand food
+post:
+  showFeatureImage: true
+  featureText: featured
+seo:
+  title: Paket Mutfak Engineering
+  keywords:
+    Paket Mutfak, Ghost Kitchens, Food, On-Demand, Delivery, Restaurant, Cloud
+    Kitchen
+appearance:
+  mainColor: "#e74f29"
+  linkHoverColor: "#e74f29"
+component:
+  navSearch: true
+  authorBox: true
+  codeLineNumbers: true
