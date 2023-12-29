@@ -2,16 +2,12 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["dev"]
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -27,8 +23,6 @@ jobs:
           npx @11ty/eleventy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-          path: "./_site"
 
   deploy:
     runs-on: ubuntu-latest
